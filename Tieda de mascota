@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Mascotas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Tienda de Mascotas</h1>
+    </header>
+
+    <!-- Slider principal -->
+    <section class="slider">
+        <div class="slide active">
+            <img src="https://via.placeholder.com/1200x400?text=Productos+para+Perros" alt="Productos para perros">
+        </div>
+        <div class="slide">
+            <img src="https://via.placeholder.com/1200x400?text=Productos+para+Gatos" alt="Productos para gatos">
+        </div>
+        <div class="slide">
+            <img src="https://via.placeholder.com/1200x400?text=Otros+Productos" alt="Otros productos">
+        </div>
+    </section>
+
+    <!-- Categorías -->
+    <section class="categorias">
+        <h2>Categorías</h2>
+        <div class="categoria">
+            <a href="#perros">Perros</a>
+        </div>
+        <div class="categoria">
+            <a href="#gatos">Gatos</a>
+        </div>
+        <div class="categoria">
+            <a href="#otros">Otros</a>
+        </div>
+    </section>
+
+    <!-- Productos de acceso rápido -->
+    <section class="productos">
+        <h2>Productos destacados</h2>
+        <div class="producto">
+            <img src="https://via.placeholder.com/200x200?text=Producto+1" alt="Producto 1">
+            <p>Producto 1 - $10</p>
+        </div>
+        <div class="producto">
+            <img src="https://via.placeholder.com/200x200?text=Producto+2" alt="Producto 2">
+            <p>Producto 2 - $20</p>
+        </div>
+        <div class="producto">
+            <img src="https://via.placeholder.com/200x200?text=Producto+3" alt="Producto 3">
+            <p>Producto 3 - $30</p>
+        </div>
+        <div class="producto">
+            <img src="https://via.placeholder.com/200x200?text=Producto+4" alt="Producto 4">
+            <p>Producto 4 - $40</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Tienda de Mascotas. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="slider.js"></script>
+</body>
+</html>

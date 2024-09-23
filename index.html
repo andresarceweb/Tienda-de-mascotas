@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Mascotas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div class="logo">
+            <h1>Tienda de Mascotas</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#slider">Inicio</a></li>
+                <li><a href="#categorias">Categorías</a></li>
+                <li><a href="#productos-descuento">Descuentos</a></li>
+                <li><a href="#consejos">Consejos</a></li>
+            </ul>
+        </nav>
+        <div class="search-cart">
+            <input type="text" placeholder="Buscar productos...">
+            <button class="carrito">Carrito (0)</button>
+        </div>
+    </header>
+
+    <!-- Slider principal -->
+    <section id="slider" class="slider">
+        <div class="slide active">
+            <img src="Imagenes/Slider 1 mirringo.jpg" alt="Tienda de mascotas">
+        </div>
+    </section>
+
+    <!-- Categorías -->
+    <section id="categorias" class="categorias">
+        <h1>Todo lo que</h1>
+        <style>
+            h1 {
+                text-align: center; /* Centra el texto horizontalmente */
+                font-family: 'Courier New', sans-serif;
+            }
+        </style>
+        <div id="textoCambiante">Tony</div>
+
+        <script>
+            const textos = ["Kiara", "Luna", "Campanita", "Michu", "Ashlan", "Toby", "Dulce", "Lulú", "Lucas", "Max", "Bruno", "Tony"];
+            let indice = 0;
+        
+            function cambiarTexto() {
+                const elemento = document.getElementById("textoCambiante");
+                elemento.innerHTML = textos[indice];
+                indice = (indice + 1) % textos.length; // Para hacer que los textos se repitan en ciclo
+            }
+        
+            setInterval(cambiarTexto, 1000); // Cambia el texto cada 1 segundos
+        </script>
+        <h1>Necesita</h1>
+    </section>
+
+    <!-- Productos en Descuento -->
+    <section id="productos-descuento" class="categorias2"> 
+        
+        <div class="productos">
+            <div class="producto">
+                <img src="Imagenes/Perro.gif" alt="Producto descuento 1">
+                <button class="comprar2">Perros</button>
+            </div>
+            <div class="producto">
+                <img src="Imagenes/Gato.gif" alt="Producto descuento 2">
+                <button class="comprar2">Gatos</button>
+            </div>
+            <div class="producto">
+                <img src="Imagenes/Hanster.png" alt="Producto descuento 3">
+                <button class="comprar2">Otros</button>
+            </div>
+            <div class="producto">
+                <img src="Imagenes/Vaca.jpg" alt="Producto descuento 3">
+                <button class="comprar2">Agro</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Productos en Descuento -->
+    <section id="productos-descuento" class="productos-descuento">
+        <br>
+        <h1>Artículos de descuento</h1>
+        <br>
+        <style>
+            h1 {
+                text-align: center; /* Centra el texto horizontalmente */
+                font-family: 'Courier New', sans-serif;
+                font-size: 35px;
+            }
+        </style>
+        <div class="productosdcto">
+            <div class="producto">
+                <img src="Imagenes/Producto maleta gato.jpg" alt="Producto descuento 1">
+                <p>Cargador de mascotas <br> <h1>$78.000</h1> <del>$110.000</del></p>
+                <button class="comprar">Agregar al Carrito</button>
+            </div>
+            <div class="producto">
+                <img src="Imagenes/Producto max vita gato.jpg" alt="Producto descuento 2">
+                <p>Max vita alimento<br> <h1>$61.000</h1> <del>$92.000</del></p>
+                <button class="comprar">Agregar al Carrito</button>
+            </div>
+            <div class="producto">
+                <img src="Imagenes/Smartbones Pollo Mini X 8 Unidades.jpg" alt="Producto descuento 3">
+                <p>SmarBones<br> <h1>$21.000</h1> <del>$46.000</del></p>
+                <button class="comprar">Agregar al Carrito</button>
+            </div>
+            <div class="producto">
+                <img src="Imagenes/Smartbones Pollo Mini X 8 Unidades.jpg" alt="Producto descuento 3">
+                <p>SmarBones<br> <h1>$21.000</h1> <del>$46.000</del></p>
+                <button class="comprar">Agregar al Carrito</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Otros Productos -->
+    <section id="productos-varios" class="productos-varios">
+        <h2>Otros Productos</h2>
+        <div class="productos">
+            <div class="producto">
+                <img src="Imagenes/Royal-Canin-Adult-LATA.webp" alt="Producto 1">
+                <p>Producto 1 - $10</p>
+                <button class="comprar">Agregar al Carrito</button>
+            </div>
+            <div class="producto">
+                <img src="Imagenes/Dog Yurt - Chunky Delidog Snack para Perros.jpg" alt="Producto 2">
+                <p>Producto 2 - $20</p>
+                <button class="comprar">Agregar al Carrito</button>
+            </div>
+            <div class="producto">
+                <img src="Imagenes/Comedero Anti-Reflujo con Pesa para Macotas.jpg" alt="Producto 3">
+                <p>Producto 3 - $30</p>
+                <button class="comprar">Agregar al Carrito</button>
+            </div>
+            <div class="producto">
+                <img src="Imagenes/Mirringo +PRO.webp" alt="Producto 3">
+                <p>Producto 3 - $30</p>
+                <button class="comprar">Agregar al Carrito</button>
+            </div>
+            <div class="producto">
+                <img src="Imagenes/Nutriss al Natural Senior.webp" alt="Producto 3">
+                <p>Producto 3 - $30</p>
+                <button class="comprar">Agregar al Carrito</button>
+            </div>
+        </div>
+        <br>
+        <div style="text-align: center;">
+            <button class="comprar2">Más productos</button>
+        </div>
+         
+    </section>
+
+    <!-- Categoría de Marcas -->
+    <section id="marcas" class="marcas">        
+        <section id="slider" class="slider">
+            <div class="slide active">
+                <img src="Imagenes/Marcas.jpg" alt="Tienda de mascotas">
+            </div>
+            <div style="text-align: center;">
+                <h2>Aliados de nuestra tienda</h2>
+            </div>
+        </section>
+        
+    </section>
+
+    <!-- Consejos para mascotas -->
+    <section id="consejos" class="consejos">
+        <h2>Consejos para el Cuidado de tu Mascota</h2>
+    
+        <article>
+            <img src="Imagenes/alimentacionmascotas.jpeg" alt="Alimentación balanceada">
+            <div>
+                <h3>Alimentación balanceada</h3>
+                <p>Es importante proporcionar a tu mascota una dieta adecuada a su tamaño y edad.</p>
+            </div>
+        </article>
+    
+        <article>
+            <div></div>
+                <h3>Ejercicio diario</h3>
+                <p>El ejercicio diario es clave para mantener la salud y el bienestar de tu mascota.</p>
+            </div>
+            <img src="Imagenes/Ejerciciosgato.webp" alt="Ejercicio diario">            
+        </article>
+    
+        <article>
+            <img src="Imagenes/veterinario.jpg" alt="Visitas al veterinario">
+            <div>
+                <h3>Visitas al veterinario</h3>
+                <p>Programa chequeos regulares con el veterinario para asegurar una vida larga y saludable.</p>
+            </div>
+        </article>
+    </section>
+    
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="redes-sociales">
+            <a href="#">Facebook</a> |
+            <a href="#">Instagram</a> |
+            <a href="#">Twitter</a>
+        </div>
+        <p>© 2024 Tienda de Mascotas. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="slider.js"></script>
+</body>
+</html>
