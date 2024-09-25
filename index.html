@@ -5,6 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda de Mascotas</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilos para el carrito */
+        .search-cart {
+            display: flex;
+            align-items: center;
+        }
+        .carrito {
+            margin-left: 10px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
     <!-- Encabezado -->
@@ -54,14 +66,13 @@
                 indice = (indice + 1) % textos.length; // Para hacer que los textos se repitan en ciclo
             }
         
-            setInterval(cambiarTexto, 1000); // Cambia el texto cada 1 segundos
+            setInterval(cambiarTexto, 1000); // Cambia el texto cada 1 segundo
         </script>
         <h1>Necesita</h1>
     </section>
 
     <!-- Productos en Descuento -->
     <section id="productos-descuento" class="categorias2"> 
-        
         <div class="productos">
             <div class="producto">
                 <img src="Imagenes/Perro.gif" alt="Producto descuento 1">
@@ -76,7 +87,7 @@
                 <button class="comprar2">Otros</button>
             </div>
             <div class="producto">
-                <img src="Imagenes/Vaca.jpg" alt="Producto descuento 3">
+                <img src="Imagenes/Vaca.jpg" alt="Producto descuento 4">
                 <button class="comprar2">Agro</button>
             </div>
         </div>
@@ -111,7 +122,7 @@
                 <button class="comprar">Agregar al Carrito</button>
             </div>
             <div class="producto">
-                <img src="Imagenes/Smartbones Pollo Mini X 8 Unidades.jpg" alt="Producto descuento 3">
+                <img src="Imagenes/Producto max vita gato.jpg" alt="Producto descuento 4">
                 <p>SmarBones<br> <h1>$21.000</h1> <del>$46.000</del></p>
                 <button class="comprar">Agregar al Carrito</button>
             </div>
@@ -119,42 +130,67 @@
     </section>
 
     <!-- Otros Productos -->
-    <section id="productos-varios" class="productos-varios">
-        <h2>Otros Productos</h2>
+    <section class="productos-varios"> 
+        <h2>Productos</h2>       
         <div class="productos">
             <div class="producto">
-                <img src="Imagenes/Royal-Canin-Adult-LATA.webp" alt="Producto 1">
-                <p>Producto 1 - $10</p>
+                <img src="Imagenes/Royal-Canin-Adult-LATA.webp" alt="Producto 1" style="width: 100%;">
+                <p>Royal canin adulto instinctive<br> <h2>$12.000</h2> <del>$26.000</del></p>
                 <button class="comprar">Agregar al Carrito</button>
             </div>
             <div class="producto">
-                <img src="Imagenes/Dog Yurt - Chunky Delidog Snack para Perros.jpg" alt="Producto 2">
-                <p>Producto 2 - $20</p>
+                <img src="Imagenes/Comedero Anti-Reflujo con Pesa para Macotas.jpg" alt="Producto 2" style="width: 100%;">
+                <p>Comedero Anti-Reflujo con Pesa para Macotas<br> <h2>$12.000</h2> <del>$26.000</del></p>
                 <button class="comprar">Agregar al Carrito</button>
             </div>
             <div class="producto">
-                <img src="Imagenes/Comedero Anti-Reflujo con Pesa para Macotas.jpg" alt="Producto 3">
-                <p>Producto 3 - $30</p>
+                <img src="Imagenes/Dog Yurt - Chunky Delidog Snack para Perros.jpg" alt="Producto 3" style="width: 100%;">
+                <p>Yogurt chunky delidog mascotas<br> <h2>$12.000</h2> <del>$26.000</del></p>
                 <button class="comprar">Agregar al Carrito</button>
             </div>
             <div class="producto">
-                <img src="Imagenes/Mirringo +PRO.webp" alt="Producto 3">
-                <p>Producto 3 - $30</p>
+                <img src="Imagenes/Mirringo +PRO.webp" alt="Producto 4" style="width: 100%;">
+                <p>Mirringo + pro cuidado urinario<br> <h2>$26.000</h2> <del>$46.000</del></p>
                 <button class="comprar">Agregar al Carrito</button>
             </div>
             <div class="producto">
-                <img src="Imagenes/Nutriss al Natural Senior.webp" alt="Producto 3">
-                <p>Producto 3 - $30</p>
+                <img src="Imagenes/Pixie-dieta-de-pollo-al-horno-500Gr-20Und.png" alt="Producto 5" style="width: 100%;">
+                <p>Combo Pixie Dieta De Pollo Al Horno<br> <h2>$21.000</h2> <del>$46.000</del></p>
+                <button class="comprar">Agregar al Carrito</button>
+            </div>
+            <!-- Productos ocultos inicialmente -->
+            <div class="producto hidden">
+                <img src="Imagenes/Chunky.webp" alt="Producto 6" style="width: 100%;">
+                <p>Alimento Para Perro Chunky Adulto Cordero<br> <h2>$21.000</h2> <del>$46.000</del></p>
+                <button class="comprar">Agregar al Carrito</button>
+            </div>
+            <div class="producto hidden">
+                <img src="Imagenes/Dogshau.webp" alt="Producto 7" style="width: 100%;">
+                <p>Dog Chow Adultos Medianos Grandes<br> <h2>$21.000</h2> <del>$46.000</del></p>
+                <button class="comprar">Agregar al Carrito</button>
+            </div>
+            <div class="producto hidden">
+                <img src="Imagenes/Alimento Para Perro Hills Adulto Small Bites Dry - 15 Lb.webp" alt="Producto 8" style="width: 100%;">
+                <p>Alimento Para Perro Hills Small Bites Dry<br> <h2>$21.000</h2> <del>$46.000</del></p>
+                <button class="comprar">Agregar al Carrito</button>
+            </div>
+            <div class="producto hidden">
+                <img src="Imagenes/Max Vita Adultos Razas Pequeñas Buffet Pollo Y Vegetales.png" alt="Producto 9" style="width: 100%;">
+                <p>Max Vita Pequeñas Pollo Y Vegetales<br> <h2>$21.000</h2> <del>$46.000</del></p>
+                <button class="comprar">Agregar al Carrito</button>
+            </div>
+            <div class="producto hidden">
+                <img src="Imagenes/Alimento Húmedo Para Perro Reelds.png" alt="Producto 10" style="width: 100%;">
+                <p>Alimento Húmedo Para Perro Reelds<br> <h2>$21.000</h2> <del>$46.000</del></p>
                 <button class="comprar">Agregar al Carrito</button>
             </div>
         </div>
-        <br>
-        <div style="text-align: center;">
-            <button class="comprar2">Más productos</button>
+        <div style="display: flex; justify-content: center;">
+            <button class="comprar2" id="masProductosBtn">Ver más</button>
         </div>
-         
-    </section>
-
+        
+    </section>    
+    
     <!-- Categoría de Marcas -->
     <section id="marcas" class="marcas">        
         <section id="slider" class="slider">
@@ -165,13 +201,11 @@
                 <h2>Aliados de nuestra tienda</h2>
             </div>
         </section>
-        
     </section>
 
     <!-- Consejos para mascotas -->
     <section id="consejos" class="consejos">
         <h2>Consejos para el Cuidado de tu Mascota</h2>
-    
         <article>
             <img src="Imagenes/alimentacionmascotas.jpeg" alt="Alimentación balanceada">
             <div>
@@ -179,7 +213,6 @@
                 <p>Es importante proporcionar a tu mascota una dieta adecuada a su tamaño y edad.</p>
             </div>
         </article>
-    
         <article>
             <div></div>
                 <h3>Ejercicio diario</h3>
@@ -187,7 +220,6 @@
             </div>
             <img src="Imagenes/Ejerciciosgato.webp" alt="Ejercicio diario">            
         </article>
-    
         <article>
             <img src="Imagenes/veterinario.jpg" alt="Visitas al veterinario">
             <div>
@@ -196,7 +228,6 @@
             </div>
         </article>
     </section>
-    
 
     <!-- Pie de página -->
     <footer>
@@ -207,7 +238,48 @@
         </div>
         <p>© 2024 Tienda de Mascotas. Todos los derechos reservados.</p>
     </footer>
+    <script>
+        document.getElementById('masProductosBtn').addEventListener('click', function() {
+            // Seleccionamos los productos ocultos
+            let hiddenProducts = document.querySelectorAll('.producto.hidden');
 
+            // Mostramos hasta 5 productos o menos si hay menos de 5 ocultos
+            for (let i = 0; i < 5 && i < hiddenProducts.length; i++) {
+                hiddenProducts[i].classList.remove('hidden');
+            }
+
+            // Verificamos si ya no hay más productos ocultos
+            if (document.querySelectorAll('.producto.hidden').length === 0) {
+                this.style.display = 'none'; // Ocultamos el botón si ya no hay productos que mostrar
+            }
+        });
+    </script>
     <script src="slider.js"></script>
+    <script>
+        // Variables para el carrito
+        let carrito = [];
+        const carritoButton = document.querySelector('.carrito');
+
+        // Función para actualizar el carrito
+        function actualizarCarrito() {
+            carritoButton.textContent = `Carrito (${carrito.length})`;
+        }
+
+        // Función para manejar el evento de agregar al carrito
+        function agregarAlCarrito(event) {
+            const producto = event.target.parentElement; // Elemento padre del botón
+            const nombreProducto = producto.querySelector('p').textContent; // Nombre del producto
+            carrito.push(nombreProducto); // Agrega el producto al carrito
+            actualizarCarrito(); // Actualiza el contador del carrito
+            alert(`${nombreProducto} agregado al carrito!`); // Alerta de confirmación
+        }
+
+        // Agregar eventos a los botones de "Agregar al Carrito"
+        const botonesComprar = document.querySelectorAll('.comprar');
+        botonesComprar.forEach(boton => {
+            boton.addEventListener('click', agregarAlCarrito);
+        });
+    </script>
+    
 </body>
 </html>
