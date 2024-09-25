@@ -90,7 +90,15 @@ nav ul li a {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra alrededor del producto */
 }
 
-.productos-varios, .marcas, .consejos {
+.marcas, .consejos {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.productos-varios { 
     max-width: 1200px;
     margin: 20px auto;
     padding: 20px;
@@ -113,8 +121,12 @@ nav ul li a {
 }
 
 .productos {
+    max-width: 1200px;
     display: grid;
+    margin: 20px auto;
+    padding: 20px;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    
     gap: 20px;
 }
 
@@ -264,4 +276,8 @@ article h3 {
 article p {
     font-family: 'Arial', sans-serif;
     font-size: 18px;
+}
+
+.hidden {
+    display: none;
 }
