@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Mascotas</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilos para el carrito */
+        .search-cart {
+            display: flex;
+            align-items: center;
+        }
+        .carrito {
+            margin-left: 10px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    </style>
+    </head>
+    <body>
+       <!-- Encabezado -->
+    <header>
+        <div class="logo">
+            <h1>Tienda de Mascotas</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>                
+                <li><a href="descuentos.html">Descuentos</a></li>
+                <li><a href="consejos.html">Consejos</a></li>
+            </ul>
+        </nav>
+        <div class="search-cart">
+            <input type="text" placeholder="Buscar productos...">
+            <button class="carrito">Carrito (0)</button>
+        </div>
+    </header>
+        <br>
+        <title>Detalle Cargador de mascotas</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .producto-detalle {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .producto-detalle img {
+            max-width: 100%;
+            border-radius: 12px;
+            transition: transform 0.3s ease;
+        }
+
+        .producto-detalle img:hover {
+            transform: scale(1.05);
+        }
+
+        .informacion-producto {
+            max-width: 600px;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .informacion-producto p {
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .precio {
+            font-size: 2em;
+            color: #28a745;
+            margin-bottom: 20px;
+        }
+
+        del {
+            color: #dc3545;
+            font-size: 0.8em;
+        }
+
+        .comprar {
+            background-color: #007bff;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .comprar:hover {
+            background-color: #0056b3;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #007bff;
+            font-size: 1.1em;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #0056b3;
+        }
+
+        /* Estilos Responsivos */
+        @media (min-width: 768px) {
+            .producto-detalle {
+                flex-direction: row;
+            }
+
+            .producto-detalle img {
+                max-width: 40%;
+            }
+
+            .informacion-producto {
+                text-align: left;
+                padding: 0 20px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            .precio {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+<!-- Sección de consejos -->
+<section class="consejos">
+    <h2>Consejos Útiles</h2>
+    <div class="consejo">
+        <img src="imagenes/cuidados-del-perro.jpg" alt="Consejo de salud para mascotas">
+        <h3>Cuida la salud de tu mascota</h3>
+        <p>Visitas regulares al veterinario son esenciales. Una revisión periódica puede detectar problemas de salud a tiempo.</p>
+    </div>
+    <div class="consejo">
+        <img src="imagenes/Ejerciciosgato.webp" alt="Consejo de juego para mascotas">
+        <h3>Juega con tu mascota</h3>
+        <p>El juego es vital para el bienestar físico y mental de tu mascota. Juguetes interactivos son ideales para estimular su mente.</p>
+    </div>
+    <div class="consejo">
+        <img src="imagenes/alimentacionmascotas.jpeg" alt="Consejo de alimentación para mascotas">
+        <h3>Alimentación balanceada</h3>
+        <p>Asegúrate de que tu mascota tenga una dieta adecuada. Consulta con tu veterinario sobre los mejores alimentos para su raza y edad.</p>
+    </div>
+</section>
+
+<!-- Sección divertida -->
+<section class="diversion">
+    <h2>Sección Divertida</h2>
+    <div class="diversion-item">
+        <img src="imagenes/Categoria ofertas.jpg" alt="Mascota disfrazada">
+        <h3>Mascotas con disfraces</h3>
+        <p>¡Mira estos divertidos disfraces para tu mascota! Asegúrate de que se sienta cómoda mientras luce adorable.</p>
+    </div>
+    <div class="diversion-item">
+        <img src="imagenes/mascota_truco.jpg" alt="Mascota aprendiendo trucos">
+        <h3>Enseña trucos a tu mascota</h3>
+        <p>Desde sentarse hasta dar la pata, enseñar trucos es una manera divertida de conectar con tu mascota. ¡Empieza con lo básico!</p>
+    </div>
+</section>
+
+<!-- Sección de imágenes adorables -->
+<section class="galeria">
+    <h2>Galería de Imágenes Adorables</h2>
+    <div class="galeria-item">
+        <img src="imagenes/mascota_adorable1.jpg" alt="Mascota adorable 1">
+    </div>
+    <div class="galeria-item">
+        <img src="imagenes/mascota_adorable2.jpg" alt="Mascota adorable 2">
+    </div>
+    <div class="galeria-item">
+        <img src="imagenes/mascota_adorable3.jpg" alt="Mascota adorable 3">
+    </div>
+</section>
+<style>
+    /* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    background-color: #ff6f61;
+    color: white;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    margin: 10px 0;
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+h2 {
+    text-align: center;
+    color: #ff6f61;
+    font-size: 2em;
+}
+
+/* Estilos para la sección de consejos */
+.consejos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.consejo {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.consejo img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.consejo h3 {
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Estilos para la sección divertida */
+.diversion {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.diversion-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.diversion-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Galería de imágenes */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    text-align: center;
+}
+
+.galeria-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    background-color: #ff6f61;
+    color: white;
+    padding: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .consejos, .diversion, .galeria {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+</body>
+</html>

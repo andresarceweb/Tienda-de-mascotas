@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Mascotas</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilos para el carrito */
+        .search-cart {
+            display: flex;
+            align-items: center;
+        }
+        .carrito {
+            margin-left: 10px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    </style>
+    </head>
+    <body>
+       <!-- Encabezado -->
+    <header>
+        <div class="logo">
+            <h1>Tienda de Mascotas</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>                
+                <li><a href="descuentos.html">Descuentos</a></li>
+                <li><a href="consejos.html">Consejos</a></li>
+            </ul>
+        </nav>
+        <div class="search-cart">
+            <input type="text" placeholder="Buscar productos...">
+            <button class="carrito">Carrito (0)</button>
+        </div>
+    </header>
+        <br>
+        <title>Detalle Cargador de mascotas</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .producto-detalle {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .producto-detalle img {
+            max-width: 100%;
+            border-radius: 12px;
+            transition: transform 0.3s ease;
+        }
+
+        .producto-detalle img:hover {
+            transform: scale(1.05);
+        }
+
+        .informacion-producto {
+            max-width: 600px;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .informacion-producto p {
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .precio {
+            font-size: 2em;
+            color: #28a745;
+            margin-bottom: 20px;
+        }
+
+        del {
+            color: #dc3545;
+            font-size: 0.8em;
+        }
+
+        .comprar {
+            background-color: #007bff;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .comprar:hover {
+            background-color: #0056b3;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #007bff;
+            font-size: 1.1em;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #0056b3;
+        }
+
+        /* Estilos Responsivos */
+        @media (min-width: 768px) {
+            .producto-detalle {
+                flex-direction: row;
+            }
+
+            .producto-detalle img {
+                max-width: 40%;
+            }
+
+            .informacion-producto {
+                text-align: left;
+                padding: 0 20px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            .precio {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Detalle del Producto: <br>Max vita alimento</h1>
+    <div class="producto-detalle">
+        <img src="Imagenes/Max Vita Adultos Razas Pequeñas Buffet Pollo Y Vegetales.png" alt="Cargador de mascotas">
+        <div class="informacion-producto">
+            <p><h2>Descripción</h2><br>
+
+                La línea Max Vita cuenta con el sello VITA COMPLEX que garantiza una alimentación 100% balanceada y llena de ingredientes que hacen que el día a día de tu mascota sea completo y feliz: desde el plato, con consumo total de la racion, hasta una excelente digestibilidad que mostrara heces firmes y sin olor. Con Max Vita tu mejor amigo estará siempre activo para disfrutar con él cada momento.
+                <br><br>
+                <h2>Beneficios</h2><br>
+                <li>CONSUMO TOTAL DE LA RACION desde el primer día.</li> <br>
+                <li>DIGESTIÓN Y ABSORCIÓN ÓPTIMA, aportando todos los nutrientes esenciales.</li><br>
+                <li>Para una vida sana y perfecto mantenimiento de las funciones vitales.</li><br>
+                <li>HECES FIRMES y con menos olor, mediante.</li><br>
+                <li>la acción de prebiótico y el Extracto de Yuca.</li><br>
+                <li>PELO LUMINOSO, niveles adecuados de proteínas y omega.</li><br>
+                <li>6 para el mantenimiento de una piel y un pelo sanos.</li><br>
+                <li>DIENTES SALUDABLES, gracias a su estructura crocante ayuda a limpiar y reducir la formación de sarro.</li><br></p>
+            <p class="precio">Precio: $78.000 <del>$110.000</del></p>
+            <button class="comprar">Agregar al Carrito</button>
+        </div>
+    </div>
+    <br>
+    <a href="index.html">Volver a la tienda</a>
+</body>

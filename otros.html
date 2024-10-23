@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Mascotas</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilos para el carrito */
+        .search-cart {
+            display: flex;
+            align-items: center;
+        }
+        .carrito {
+            margin-left: 10px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    </style>
+    </head>
+    <body>
+       <!-- Encabezado -->
+    <header>
+        <div class="logo">
+            <h1>Tienda de Mascotas</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>                
+                <li><a href="descuentos.html">Descuentos</a></li>
+                <li><a href="consejos.html">Consejos</a></li>
+            </ul>
+        </nav>
+        <div class="search-cart">
+            <input type="text" placeholder="Buscar productos...">
+            <button class="carrito">Carrito (0)</button>
+        </div>
+    </header>
+        <br>
+        <title>Detalle Cargador de mascotas</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .producto-detalle {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .producto-detalle img {
+            max-width: 100%;
+            border-radius: 12px;
+            transition: transform 0.3s ease;
+        }
+
+        .producto-detalle img:hover {
+            transform: scale(1.05);
+        }
+
+        .informacion-producto {
+            max-width: 600px;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .informacion-producto p {
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .precio {
+            font-size: 2em;
+            color: #28a745;
+            margin-bottom: 20px;
+        }
+
+        del {
+            color: #dc3545;
+            font-size: 0.8em;
+        }
+
+        .comprar {
+            background-color: #007bff;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .comprar:hover {
+            background-color: #0056b3;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #007bff;
+            font-size: 1.1em;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #0056b3;
+        }
+
+        /* Estilos Responsivos */
+        @media (min-width: 768px) {
+            .producto-detalle {
+                flex-direction: row;
+            }
+
+            .producto-detalle img {
+                max-width: 40%;
+            }
+
+            .informacion-producto {
+                text-align: left;
+                padding: 0 20px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            .precio {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+
+<!-- Slider principal -->
+<section id="slider" class="slider">
+    <div class="slide active">
+        <img src="Imagenes/Slider 4 otros.jpg" alt="Tienda de mascotas">
+    </div>
+</section>
+
+<!-- Otros Productos -->
+<section class="productos-varios"> 
+    <h2>Productos</h2>       
+    <div class="productos">
+        <div class="producto">
+            <img src="Imagenes/Royal-Canin-Adult-LATA.webp" alt="Producto 1" style="width: 100%;">
+            <p>Royal canin adulto instinctive<br> <h2>$12.000</h2> <del>$26.000</del></p>
+            <button class="comprar">Agregar al Carrito</button>
+        </div>
+        <div class="producto">
+            <img src="Imagenes/Comedero Anti-Reflujo con Pesa para Macotas.jpg" alt="Producto 2" style="width: 100%;">
+            <p>Comedero Anti-Reflujo con Pesa para Macotas<br> <h2>$12.000</h2> <del>$26.000</del></p>
+            <button class="comprar">Agregar al Carrito</button>
+        </div>
+        <div class="producto">
+            <img src="Imagenes/Dog Yurt - Chunky Delidog Snack para Perros.jpg" alt="Producto 3" style="width: 100%;">
+            <p>Yogurt chunky delidog mascotas<br> <h2>$12.000</h2> <del>$26.000</del></p>
+            <button class="comprar">Agregar al Carrito</button>
+        </div>
+        <div class="producto">
+            <img src="Imagenes/Mirringo +PRO.webp" alt="Producto 4" style="width: 100%;">
+            <p>Mirringo + pro cuidado urinario<br> <h2>$26.000</h2> <del>$46.000</del></p>
+            <button class="comprar">Agregar al Carrito</button>
+        </div>
+        <div class="producto">
+            <img src="Imagenes/Pixie-dieta-de-pollo-al-horno-500Gr-20Und.png" alt="Producto 5" style="width: 100%;">
+            <p>Combo Pixie Dieta De Pollo Al Horno<br> <h2>$21.000</h2> <del>$46.000</del></p>
+            <button class="comprar">Agregar al Carrito</button>
+        </div>
+        <div class="producto">
+            <img src="Imagenes/Royal-Canin-Adult-LATA.webp" alt="Producto 1" style="width: 100%;">
+            <p>Royal canin adulto instinctive<br> <h2>$12.000</h2> <del>$26.000</del></p>
+            <button class="comprar">Agregar al Carrito</button>
+        </div>
+        <div class="producto">
+            <img src="Imagenes/Comedero Anti-Reflujo con Pesa para Macotas.jpg" alt="Producto 2" style="width: 100%;">
+            <p>Comedero Anti-Reflujo con Pesa para Macotas<br> <h2>$12.000</h2> <del>$26.000</del></p>
+            <button class="comprar">Agregar al Carrito</button>
+        </div>
+        <div class="producto">
+            <img src="Imagenes/Dog Yurt - Chunky Delidog Snack para Perros.jpg" alt="Producto 3" style="width: 100%;">
+            <p>Yogurt chunky delidog mascotas<br> <h2>$12.000</h2> <del>$26.000</del></p>
+            <button class="comprar">Agregar al Carrito</button>
+        </div>
+        <div class="producto">
+            <img src="Imagenes/Mirringo +PRO.webp" alt="Producto 4" style="width: 100%;">
+            <p>Mirringo + pro cuidado urinario<br> <h2>$26.000</h2> <del>$46.000</del></p>
+            <button class="comprar">Agregar al Carrito</button>
+        </div>
+        <div class="producto">
+            <img src="Imagenes/Pixie-dieta-de-pollo-al-horno-500Gr-20Und.png" alt="Producto 5" style="width: 100%;">
+            <p>Combo Pixie Dieta De Pollo Al Horno<br> <h2>$21.000</h2> <del>$46.000</del></p>
+            <button class="comprar">Agregar al Carrito</button>
+        </div>
+        <div class="producto">
+            <img src="Imagenes/Royal-Canin-Adult-LATA.webp" alt="Producto 1" style="width: 100%;">
+            <p>Royal canin adulto instinctive<br> <h2>$12.000</h2> <del>$26.000</del></p>
+            <button class="comprar">Agregar al Carrito</button>
+        </div>
+        <div class="producto">
+            <img src="Imagenes/Comedero Anti-Reflujo con Pesa para Macotas.jpg" alt="Producto 2" style="width: 100%;">
+            <p>Comedero Anti-Reflujo con Pesa para Macotas<br> <h2>$12.000</h2> <del>$26.000</del></p>
+            <button class="comprar">Agregar al Carrito</button>
+        </div>
+        <div class="producto">
+            <img src="Imagenes/Dog Yurt - Chunky Delidog Snack para Perros.jpg" alt="Producto 3" style="width: 100%;">
+            <p>Yogurt chunky delidog mascotas<br> <h2>$12.000</h2> <del>$26.000</del></p>
+            <button class="comprar">Agregar al Carrito</button>
+        </div>
+        <div class="producto">
+            <img src="Imagenes/Mirringo +PRO.webp" alt="Producto 4" style="width: 100%;">
+            <p>Mirringo + pro cuidado urinario<br> <h2>$26.000</h2> <del>$46.000</del></p>
+            <button class="comprar">Agregar al Carrito</button>
+        </div>
+        <div class="producto">
+            <img src="Imagenes/Pixie-dieta-de-pollo-al-horno-500Gr-20Und.png" alt="Producto 5" style="width: 100%;">
+            <p>Combo Pixie Dieta De Pollo Al Horno<br> <h2>$21.000</h2> <del>$46.000</del></p>
+            <button class="comprar">Agregar al Carrito</button>
+        </div>
+        <!-- Productos ocultos inicialmente -->
+        <div class="producto hidden">
+            <img src="Imagenes/Chunky.webp" alt="Producto 6" style="width: 100%;">
+            <p>Alimento Para Perro Chunky Adulto Cordero<br> <h2>$21.000</h2> <del>$46.000</del></p>
+            <button class="comprar">Agregar al Carrito</button>
+        </div>
+        <div class="producto hidden">
+            <img src="Imagenes/Dogshau.webp" alt="Producto 7" style="width: 100%;">
+            <p>Dog Chow Adultos Medianos Grandes<br> <h2>$21.000</h2> <del>$46.000</del></p>
+            <button class="comprar">Agregar al Carrito</button>
+        </div>
+        <div class="producto hidden">
+            <img src="Imagenes/Alimento Para Perro Hills Adulto Small Bites Dry - 15 Lb.webp" alt="Producto 8" style="width: 100%;">
+            <p>Alimento Para Perro Hills Small Bites Dry<br> <h2>$21.000</h2> <del>$46.000</del></p>
+            <button class="comprar">Agregar al Carrito</button>
+        </div>
+        <div class="producto hidden">
+            <img src="Imagenes/Max Vita Adultos Razas Pequeñas Buffet Pollo Y Vegetales.png" alt="Producto 9" style="width: 100%;">
+            <p>Max Vita Pequeñas Pollo Y Vegetales<br> <h2>$21.000</h2> <del>$46.000</del></p>
+            <button class="comprar">Agregar al Carrito</button>
+        </div>
+        <div class="producto hidden">
+            <img src="Imagenes/Alimento Húmedo Para Perro Reelds.png" alt="Producto 10" style="width: 100%;">
+            <p>Alimento Húmedo Para Perro Reelds<br> <h2>$21.000</h2> <del>$46.000</del></p>
+            <button class="comprar">Agregar al Carrito</button>
+        </div>
+    </div>
+    <div style="display: flex; justify-content: center;">
+        <button class="comprar2" id="masProductosBtn">Ver más</button>
+    </div>
+    
+</section>  
+<!-- Pie de página -->
+<footer>
+    <div class="redes-sociales">
+        <a href="#">Facebook</a> |
+        <a href="#">Instagram</a> |
+        <a href="#">Twitter</a>
+    </div>
+    <p>© 2024 Tienda de Mascotas. Todos los derechos reservados.</p>
+</footer>
+<script>
+    document.getElementById('masProductosBtn').addEventListener('click', function() {
+        // Seleccionamos los productos ocultos
+        let hiddenProducts = document.querySelectorAll('.producto.hidden');
+
+        // Mostramos hasta 5 productos o menos si hay menos de 5 ocultos
+        for (let i = 0; i < 5 && i < hiddenProducts.length; i++) {
+            hiddenProducts[i].classList.remove('hidden');
+        }
+
+        // Verificamos si ya no hay más productos ocultos
+        if (document.querySelectorAll('.producto.hidden').length === 0) {
+            this.style.display = 'none'; // Ocultamos el botón si ya no hay productos que mostrar
+        }
+    });
+</script>
+<script src="slider.js"></script>
+<script>
+    // Variables para el carrito
+    let carrito = [];
+    const carritoButton = document.querySelector('.carrito');
+
+    // Función para actualizar el carrito
+    function actualizarCarrito() {
+        carritoButton.textContent = `Carrito (${carrito.length})`;
+    }
+
+    // Función para manejar el evento de agregar al carrito
+    function agregarAlCarrito(event) {
+        const producto = event.target.parentElement; // Elemento padre del botón
+        const nombreProducto = producto.querySelector('p').textContent; // Nombre del producto
+        carrito.push(nombreProducto); // Agrega el producto al carrito
+        actualizarCarrito(); // Actualiza el contador del carrito
+        alert(`${nombreProducto} agregado al carrito!`); // Alerta de confirmación
+    }
+
+    // Agregar eventos a los botones de "Agregar al Carrito"
+    const botonesComprar = document.querySelectorAll('.comprar');
+    botonesComprar.forEach(boton => {
+        boton.addEventListener('click', agregarAlCarrito);
+    });
+</script>
+
+</body>
+</html>

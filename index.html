@@ -26,10 +26,9 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#slider">Inicio</a></li>
-                <li><a href="#categorias">Categorías</a></li>
-                <li><a href="#productos-descuento">Descuentos</a></li>
-                <li><a href="#consejos">Consejos</a></li>
+                <li><a href="index.html">Inicio</a></li>                
+                <li><a href="descuentos.html">Descuentos</a></li>
+                <li><a href="consejos.html">Consejos</a></li>
             </ul>
         </nav>
         <div class="search-cart">
@@ -76,15 +75,21 @@
         <div class="productos">
             <div class="producto">
                 <img src="Imagenes/Perro.gif" alt="Producto descuento 1">
-                <button class="comprar2">Perros</button>
-            </div>
+                <a href="perros.html">
+                    <button class="comprar2">Perros</button>
+                </a>
+            </div>            
             <div class="producto">
                 <img src="Imagenes/Gato.gif" alt="Producto descuento 2">
-                <button class="comprar2">Gatos</button>
+                <a href="gatos.html">
+                    <button class="comprar2">Gatos</button>
+                </a>
             </div>
             <div class="producto">
                 <img src="Imagenes/Hanster.png" alt="Producto descuento 3">
-                <button class="comprar2">Otros</button>
+                <a href="otros.html">
+                    <button class="comprar2">Otros</button>
+                </a>
             </div>
             <div class="producto">
                 <img src="Imagenes/Vaca.jpg" alt="Producto descuento 4">
@@ -104,85 +109,215 @@
                 font-family: 'Courier New', sans-serif;
                 font-size: 35px;
             }
+            .productosdcto {
+                display: flex;
+                justify-content: space-around;
+            }
+            .producto {
+                width: 200px;
+                text-align: center;
+            }
         </style>
+    
         <div class="productosdcto">
             <div class="producto">
-                <img src="Imagenes/Producto maleta gato.jpg" alt="Producto descuento 1">
+                <a href="detalle-producto1.html">
+                    <img src="Imagenes/Producto maleta gato.jpg" alt="Producto descuento 1">
+                </a>
                 <p>Cargador de mascotas <br> <h1>$78.000</h1> <del>$110.000</del></p>
                 <button class="comprar">Agregar al Carrito</button>
+                <a href="detalle-producto1.html">
+                    <button class="ver-detalle">Ver Detalle</button>
+                </a>
             </div>
             <div class="producto">
-                <img src="Imagenes/Producto max vita gato.jpg" alt="Producto descuento 2">
+                <a href="detalle-producto2.html">
+                    <img src="Imagenes/Producto max vita gato.jpg" alt="Producto descuento 2">
+                </a>
                 <p>Max vita alimento<br> <h1>$61.000</h1> <del>$92.000</del></p>
                 <button class="comprar">Agregar al Carrito</button>
+                <a href="detalle-producto2.html">
+                    <button class="ver-detalle">Ver Detalle</button>
+                </a>
             </div>
             <div class="producto">
-                <img src="Imagenes/Smartbones Pollo Mini X 8 Unidades.jpg" alt="Producto descuento 3">
+                <a href="detalle-producto3.html">
+                    <img src="Imagenes/Smartbones Pollo Mini X 8 Unidades.jpg" alt="Producto descuento 3">
+                </a>
                 <p>SmarBones<br> <h1>$21.000</h1> <del>$46.000</del></p>
                 <button class="comprar">Agregar al Carrito</button>
+                <a href="detalle-producto3.html">
+                    <button class="ver-detalle">Ver Detalle</button>
+                </a>
             </div>
             <div class="producto">
-                <img src="Imagenes/Producto max vita gato.jpg" alt="Producto descuento 4">
-                <p>SmarBones<br> <h1>$21.000</h1> <del>$46.000</del></p>
+                <a href="detalle-producto2.html">
+                    <img src="Imagenes/Producto max vita gato.jpg" alt="Producto descuento 4">
+                </a>
+                <p>Max vita alimento<br> <h1>$21.000</h1> <del>$46.000</del></p>
                 <button class="comprar">Agregar al Carrito</button>
+                <a href="detalle-producto2.html">
+                    <button class="ver-detalle">Ver Detalle</button>
+                </a>
             </div>
         </div>
     </section>
+    
 
     <!-- Otros Productos -->
     <section class="productos-varios"> 
         <h2>Productos</h2>       
         <div class="productos">
             <div class="producto">
+                <a href="Royal_canin.html">
                 <img src="Imagenes/Royal-Canin-Adult-LATA.webp" alt="Producto 1" style="width: 100%;">
+                </a>
                 <p>Royal canin adulto instinctive<br> <h2>$12.000</h2> <del>$26.000</del></p>
                 <button class="comprar">Agregar al Carrito</button>
+                <a href="Royal_canin.html">
+                    <button class="ver-detalle">Ver Detalle</button>
+                </a>
             </div>
             <div class="producto">
+                <a href="comedero.html">
                 <img src="Imagenes/Comedero Anti-Reflujo con Pesa para Macotas.jpg" alt="Producto 2" style="width: 100%;">
+                </a>
                 <p>Comedero Anti-Reflujo con Pesa para Macotas<br> <h2>$12.000</h2> <del>$26.000</del></p>
                 <button class="comprar">Agregar al Carrito</button>
+                <a href="comedero.html">
+                    <button class="ver-detalle">Ver Detalle</button>
+                </a>
             </div>
             <div class="producto">
+                <a href="dogyurt.html">
                 <img src="Imagenes/Dog Yurt - Chunky Delidog Snack para Perros.jpg" alt="Producto 3" style="width: 100%;">
+                </a>
                 <p>Yogurt chunky delidog mascotas<br> <h2>$12.000</h2> <del>$26.000</del></p>
                 <button class="comprar">Agregar al Carrito</button>
+                <a href="dogyurt.html">
+                    <button class="ver-detalle">Ver Detalle</button>
+                </a>
             </div>
             <div class="producto">
+                <a href="mirringo.html">
                 <img src="Imagenes/Mirringo +PRO.webp" alt="Producto 4" style="width: 100%;">
+                </a>
                 <p>Mirringo + pro cuidado urinario<br> <h2>$26.000</h2> <del>$46.000</del></p>
                 <button class="comprar">Agregar al Carrito</button>
+                <a href="mirringo.html">
+                    <button class="ver-detalle">Ver Detalle</button>
+                </a>
             </div>
             <div class="producto">
+                <a href="pixiedieta.html">
                 <img src="Imagenes/Pixie-dieta-de-pollo-al-horno-500Gr-20Und.png" alt="Producto 5" style="width: 100%;">
+                </a>
                 <p>Combo Pixie Dieta De Pollo Al Horno<br> <h2>$21.000</h2> <del>$46.000</del></p>
                 <button class="comprar">Agregar al Carrito</button>
+                <a href="pixiedieta.html">
+                    <button class="ver-detalle">Ver Detalle</button>
+                </a>
+            </div>
+            <div class="producto">
+                <a href="Royal_canin.html">
+                <img src="Imagenes/Royal-Canin-Adult-LATA.webp" alt="Producto 1" style="width: 100%;">
+                </a>
+                <p>Royal canin adulto instinctive<br> <h2>$12.000</h2> <del>$26.000</del></p>
+                <button class="comprar">Agregar al Carrito</button>
+                <a href="Royal_canin.html">
+                    <button class="ver-detalle">Ver Detalle</button>
+                </a>
+            </div>
+            <div class="producto">
+                <a href="comedero.html">
+                <img src="Imagenes/Comedero Anti-Reflujo con Pesa para Macotas.jpg" alt="Producto 2" style="width: 100%;">
+                </a>
+                <p>Comedero Anti-Reflujo con Pesa para Macotas<br> <h2>$12.000</h2> <del>$26.000</del></p>
+                <button class="comprar">Agregar al Carrito</button>
+                <a href="comedero.html">
+                    <button class="ver-detalle">Ver Detalle</button>
+                </a>
+            </div>
+            <div class="producto">
+                <a href="dogyurt.html">
+                <img src="Imagenes/Dog Yurt - Chunky Delidog Snack para Perros.jpg" alt="Producto 3" style="width: 100%;">
+                </a>
+                <p>Yogurt chunky delidog mascotas<br> <h2>$12.000</h2> <del>$26.000</del></p>
+                <button class="comprar">Agregar al Carrito</button>
+                <a href="dogyurt.html">
+                    <button class="ver-detalle">Ver Detalle</button>
+                </a>
+            </div>
+            <div class="producto">
+                <a href="mirringo.html">
+                <img src="Imagenes/Mirringo +PRO.webp" alt="Producto 4" style="width: 100%;">
+                </a>
+                <p>Mirringo + pro cuidado urinario<br> <h2>$26.000</h2> <del>$46.000</del></p>
+                <button class="comprar">Agregar al Carrito</button>
+                <a href="mirringo.html">
+                    <button class="ver-detalle">Ver Detalle</button>
+                </a>
+            </div>
+            <div class="producto">
+                <a href="pixiedieta.html">
+                <img src="Imagenes/Pixie-dieta-de-pollo-al-horno-500Gr-20Und.png" alt="Producto 5" style="width: 100%;">
+                </a>
+                <p>Combo Pixie Dieta De Pollo Al Horno<br> <h2>$21.000</h2> <del>$46.000</del></p>
+                <button class="comprar">Agregar al Carrito</button>
+                <a href="pixiedieta.html">
+                    <button class="ver-detalle">Ver Detalle</button>
+                </a>
             </div>
             <!-- Productos ocultos inicialmente -->
             <div class="producto hidden">
+                <a href="chunky.html">
                 <img src="Imagenes/Chunky.webp" alt="Producto 6" style="width: 100%;">
+                </a>
                 <p>Alimento Para Perro Chunky Adulto Cordero<br> <h2>$21.000</h2> <del>$46.000</del></p>
                 <button class="comprar">Agregar al Carrito</button>
+                <a href="chunky.html">
+                    <button class="ver-detalle">Ver Detalle</button>
+                </a>
             </div>
             <div class="producto hidden">
+                <a href="dogshaw.html">
                 <img src="Imagenes/Dogshau.webp" alt="Producto 7" style="width: 100%;">
+                </a>
                 <p>Dog Chow Adultos Medianos Grandes<br> <h2>$21.000</h2> <del>$46.000</del></p>
                 <button class="comprar">Agregar al Carrito</button>
+                <a href="dogshaw.html">
+                    <button class="ver-detalle">Ver Detalle</button>
+                </a>
             </div>
             <div class="producto hidden">
+                <a href="biter.html">
                 <img src="Imagenes/Alimento Para Perro Hills Adulto Small Bites Dry - 15 Lb.webp" alt="Producto 8" style="width: 100%;">
+                </a>
                 <p>Alimento Para Perro Hills Small Bites Dry<br> <h2>$21.000</h2> <del>$46.000</del></p>
                 <button class="comprar">Agregar al Carrito</button>
+                <a href="biter.html">
+                    <button class="ver-detalle">Ver Detalle</button>
+                </a>
             </div>
             <div class="producto hidden">
+                <a href="maxvita.html">
                 <img src="Imagenes/Max Vita Adultos Razas Pequeñas Buffet Pollo Y Vegetales.png" alt="Producto 9" style="width: 100%;">
+                </a>
                 <p>Max Vita Pequeñas Pollo Y Vegetales<br> <h2>$21.000</h2> <del>$46.000</del></p>
                 <button class="comprar">Agregar al Carrito</button>
+                <a href="maxvita.html">
+                    <button class="ver-detalle">Ver Detalle</button>
+                </a>
             </div>
             <div class="producto hidden">
+                <a href="reel.html">
                 <img src="Imagenes/Alimento Húmedo Para Perro Reelds.png" alt="Producto 10" style="width: 100%;">
+                </a>
                 <p>Alimento Húmedo Para Perro Reelds<br> <h2>$21.000</h2> <del>$46.000</del></p>
                 <button class="comprar">Agregar al Carrito</button>
+                <a href="reel.html">
+                    <button class="ver-detalle">Ver Detalle</button>
+                </a>
             </div>
         </div>
         <div style="display: flex; justify-content: center;">
@@ -214,11 +349,12 @@
             </div>
         </article>
         <article>
-            <div></div>
+            <div>
                 <h3>Ejercicio diario</h3>
                 <p>El ejercicio diario es clave para mantener la salud y el bienestar de tu mascota.</p>
             </div>
-            <img src="Imagenes/Ejerciciosgato.webp" alt="Ejercicio diario">            
+            <img src="Imagenes/Ejerciciosgato.jpg" alt="Ejercicio diario">
+            
         </article>
         <article>
             <img src="Imagenes/veterinario.jpg" alt="Visitas al veterinario">
@@ -228,13 +364,13 @@
             </div>
         </article>
     </section>
+    
 
     <!-- Pie de página -->
     <footer>
         <div class="redes-sociales">
-            <a href="#">Facebook</a> |
-            <a href="#">Instagram</a> |
-            <a href="#">Twitter</a>
+            <a href="https://www.instagram.com/tiendademascotasmex/">Instagram</a> |
+            <a href="#">WhatsApp</a>
         </div>
         <p>© 2024 Tienda de Mascotas. Todos los derechos reservados.</p>
     </footer>
