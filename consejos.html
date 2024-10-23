@@ -3,23 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda de Mascotas</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Consejos para tus Mascotas</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        /* Estilos para el carrito */
-        .search-cart {
-            display: flex;
-            align-items: center;
+        /* Estilos generales */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
         }
-        .carrito {
-            margin-left: 10px;
-            padding: 5px 10px;
-            cursor: pointer;
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            font-size: 2rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #333;
+            padding: 1rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            font-size: 1.2rem;
+        }
+
+        nav a:hover {
+            background-color: #4CAF50;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 1rem;
+        }
+
+        .section {
+            margin-bottom: 3rem;
+        }
+
+        .section h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .section p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            text-align: justify;
+        }
+
+        /* Estilos de cuadrículas */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background-color: white;
+            padding: 1.5rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .card h3 {
+            text-align: center;
+            font-size: 1.5rem;
+            color: #4CAF50;
+        }
+
+        .card p {
+            font-size: 1rem;
+            text-align: justify;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+        }
+
+        /* Estilos Responsive */
+        @media (max-width: 768px) {
+            header {
+                font-size: 1.5rem;
+            }
+
+            nav a {
+                font-size: 1rem;
+            }
+
+            .section h2 {
+                font-size: 1.5rem;
+            }
+
+            .card h3 {
+                font-size: 1.2rem;
+            }
         }
     </style>
-    </head>
-    <body>
-       <!-- Encabezado -->
+</head>
+<body>
+    <!-- Encabezado -->
     <header>
         <div class="logo">
             <h1>Tienda de Mascotas</h1>
@@ -36,284 +134,87 @@
             <button class="carrito">Carrito (0)</button>
         </div>
     </header>
-        <br>
-        <title>Detalle Cargador de mascotas</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f8f9fa;
-            margin: 0;
-            padding: 20px;
-        }
 
-        h1 {
-            text-align: center;
-            font-size: 2.5em;
-            color: #333;
-            margin-bottom: 20px;
-        }
+    <nav>
+        <a href="#perros">Perros</a>
+        <a href="#gatos">Gatos</a>
+        <a href="#otros">Otros Animales</a>
+    </nav>
 
-        .producto-detalle {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        }
+    <div class="container">
+        <!-- Sección Perros -->
+        <section id="perros" class="section">            
+            <h2>Consejos para Perros</h2>
+            <div class="grid">
+                <div class="card">
+                    <img src="Imagenes/alimentacion-perro-cachorro-veterinario-cuenca.jpg" alt="">
+                    <h3>Alimentación</h3>
+                    <p>Es fundamental alimentar a tu perro con un pienso adecuado a su edad, tamaño y raza. Consulta a tu veterinario para elegir la mejor opción.</p>
+                </div>
+                <div class="card">
+                    <img src="Imagenes/ejercicioperro.jpg" alt="">
+                    <h3>Ejercicio</h3>
+                    <p>Los perros necesitan ejercicio diario. Paseos, carreras y juegos son esenciales para su salud física y mental.</p>
+                </div>
+                <div class="card">
+                    <img src="Imagenes/saludperro.jpg" alt="">
+                    <h3>Salud</h3>
+                    <p>Las visitas regulares al veterinario son clave para detectar cualquier problema de salud y mantener sus vacunas al día.</p>
+                </div>
+            </div>
+        </section>
 
-        .producto-detalle img {
-            max-width: 100%;
-            border-radius: 12px;
-            transition: transform 0.3s ease;
-        }
+        <!-- Sección Gatos -->
+        <section id="gatos" class="section">
+            <h2>Consejos para Gatos</h2>
+            <div class="grid">
+                <div class="card">
+                    <img src="Imagenes/alimetogato.jpg" alt="">
+                    <h3>Alimentación</h3>
+                    <p>Los gatos necesitan una dieta rica en proteínas. Es importante asegurarse de que su comida contenga los nutrientes adecuados.</p>
+                </div>
+                <div class="card">
+                    <img src="Imagenes/deporgato.jpg" alt="">
+                    <h3>Juguetes y Enriquecimiento</h3>
+                    <p>Los gatos son muy curiosos y activos. Proporciónales juguetes y actividades para estimular su mente y cuerpo.</p>
+                </div>
+                <div class="card">
+                    <img src="Imagenes/higienegato.jpg" alt="">
+                    <h3>Higiene</h3>
+                    <p>La higiene de tu gato es esencial. Cepillarlos con regularidad y cuidar su caja de arena evitará problemas de salud.</p>
+                </div>
+            </div>
+        </section>
 
-        .producto-detalle img:hover {
-            transform: scale(1.05);
-        }
-
-        .informacion-producto {
-            max-width: 600px;
-            text-align: center;
-            padding: 20px;
-        }
-
-        .informacion-producto p {
-            font-size: 1.2em;
-            color: #555;
-            margin-bottom: 20px;
-        }
-
-        .precio {
-            font-size: 2em;
-            color: #28a745;
-            margin-bottom: 20px;
-        }
-
-        del {
-            color: #dc3545;
-            font-size: 0.8em;
-        }
-
-        .comprar {
-            background-color: #007bff;
-            color: white;
-            padding: 12px 20px;
-            border: none;
-            border-radius: 8px;
-            font-size: 1.2em;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        .comprar:hover {
-            background-color: #0056b3;
-        }
-
-        a {
-            display: inline-block;
-            margin-top: 20px;
-            text-decoration: none;
-            color: #007bff;
-            font-size: 1.1em;
-            transition: color 0.3s ease;
-        }
-
-        a:hover {
-            color: #0056b3;
-        }
-
-        /* Estilos Responsivos */
-        @media (min-width: 768px) {
-            .producto-detalle {
-                flex-direction: row;
-            }
-
-            .producto-detalle img {
-                max-width: 40%;
-            }
-
-            .informacion-producto {
-                text-align: left;
-                padding: 0 20px;
-            }
-        }
-
-        @media (max-width: 767px) {
-            h1 {
-                font-size: 2em;
-            }
-
-            .precio {
-                font-size: 1.8em;
-            }
-        }
-    </style>
-</head>
-<!-- Sección de consejos -->
-<section class="consejos">
-    <h2>Consejos Útiles</h2>
-    <div class="consejo">
-        <img src="imagenes/cuidados-del-perro.jpg" alt="Consejo de salud para mascotas">
-        <h3>Cuida la salud de tu mascota</h3>
-        <p>Visitas regulares al veterinario son esenciales. Una revisión periódica puede detectar problemas de salud a tiempo.</p>
+        <!-- Sección Otros Animales -->
+        <section id="otros" class="section">
+            <h2>Consejos para Otros Animales</h2>
+            <div class="grid">
+                <div class="card">
+                    <img src="Imagenes/nutria.jpg" alt="">
+                    <h3>Pequeños Mamíferos</h3>
+                    <p>Es importante proporcionar un ambiente limpio y adecuado para conejos, cobayas y otros pequeños mamíferos. Los espacios amplios y bien ventilados son clave.</p>
+                </div>
+                <div class="card">
+                    <img src="Imagenes/aves.jpg" alt="">
+                    <h3>Aves</h3>
+                    <p>Las aves necesitan una dieta balanceada y una jaula adecuada para su tamaño. Los juguetes para aves también son una excelente forma de entretenimiento.</p>
+                </div>
+                <div class="card">
+                    <img src="Imagenes/reptiles.jpg" alt="">
+                    <h3>Reptiles</h3>
+                    <p>Los reptiles requieren condiciones especiales como iluminación y calefacción adecuadas para mantenerse sanos. Consulta con un especialista para más detalles.</p>
+                </div>
+            </div>
+        </section>
     </div>
-    <div class="consejo">
-        <img src="imagenes/Ejerciciosgato.webp" alt="Consejo de juego para mascotas">
-        <h3>Juega con tu mascota</h3>
-        <p>El juego es vital para el bienestar físico y mental de tu mascota. Juguetes interactivos son ideales para estimular su mente.</p>
-    </div>
-    <div class="consejo">
-        <img src="imagenes/alimentacionmascotas.jpeg" alt="Consejo de alimentación para mascotas">
-        <h3>Alimentación balanceada</h3>
-        <p>Asegúrate de que tu mascota tenga una dieta adecuada. Consulta con tu veterinario sobre los mejores alimentos para su raza y edad.</p>
-    </div>
-</section>
 
-<!-- Sección divertida -->
-<section class="diversion">
-    <h2>Sección Divertida</h2>
-    <div class="diversion-item">
-        <img src="imagenes/Categoria ofertas.jpg" alt="Mascota disfrazada">
-        <h3>Mascotas con disfraces</h3>
-        <p>¡Mira estos divertidos disfraces para tu mascota! Asegúrate de que se sienta cómoda mientras luce adorable.</p>
-    </div>
-    <div class="diversion-item">
-        <img src="imagenes/mascota_truco.jpg" alt="Mascota aprendiendo trucos">
-        <h3>Enseña trucos a tu mascota</h3>
-        <p>Desde sentarse hasta dar la pata, enseñar trucos es una manera divertida de conectar con tu mascota. ¡Empieza con lo básico!</p>
-    </div>
-</section>
-
-<!-- Sección de imágenes adorables -->
-<section class="galeria">
-    <h2>Galería de Imágenes Adorables</h2>
-    <div class="galeria-item">
-        <img src="imagenes/mascota_adorable1.jpg" alt="Mascota adorable 1">
-    </div>
-    <div class="galeria-item">
-        <img src="imagenes/mascota_adorable2.jpg" alt="Mascota adorable 2">
-    </div>
-    <div class="galeria-item">
-        <img src="imagenes/mascota_adorable3.jpg" alt="Mascota adorable 3">
-    </div>
-</section>
-<style>
-    /* Estilos generales */
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #f4f4f9;
-    color: #333;
-}
-
-header {
-    text-align: center;
-    background-color: #ff6f61;
-    color: white;
-    padding: 20px;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
-}
-
-header p {
-    margin: 10px 0;
-}
-
-section {
-    padding: 20px;
-    margin: 20px 0;
-}
-
-h2 {
-    text-align: center;
-    color: #ff6f61;
-    font-size: 2em;
-}
-
-/* Estilos para la sección de consejos */
-.consejos {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
-}
-
-.consejo {
-    background-color: white;
-    border-radius: 10px;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.consejo img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-.consejo h3 {
-    color: #333;
-    margin-top: 10px;
-}
-
-/* Estilos para la sección divertida */
-.diversion {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
-}
-
-.diversion-item {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.diversion-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-/* Galería de imágenes */
-.galeria {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
-    text-align: center;
-}
-
-.galeria-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-/* Pie de página */
-footer {
-    text-align: center;
-    background-color: #ff6f61;
-    color: white;
-    padding: 10px;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .consejos, .diversion, .galeria {
-        grid-template-columns: 1fr;
-    }
-}
-</style>
+    <footer>
+        <div class="redes-sociales">
+            <a href="https://www.instagram.com/tiendademascotasmex/">Instagram</a> |
+            <a href="#">WhatsApp</a>
+        </div>
+        <p>© 2024 Tienda de Mascotas. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
